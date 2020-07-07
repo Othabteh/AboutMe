@@ -1,5 +1,5 @@
 'use strict';
-var userScour=0;
+var userScore=0;
 var userName = prompt('What is your name?');
 alert('Hello ' + userName + ' welcome to my website');
 
@@ -13,7 +13,8 @@ question1 = question1.toLowerCase();
 if (question1 === 'yes') {
   // console.log('you are right i like waching movies');
   alert('you are right i like waching movies');
-  userScour++;
+  userScore++;
+  console.log(userScore);
 } else if (question1 === 'no') {
   // console.log('Nop... you are wrong ');
   alert('Nop... you are wrong ');
@@ -30,7 +31,8 @@ question2 = question2.toLowerCase();
 if (question2 === 'yes') {
   // console.log('you are right i like drinking coffe');
   alert('you are right i like drinking coffe');
-  userScour++;
+  userScore++;
+  console.log(userScore);
 } else if (question2 === 'no') {
   // console.log('Nop... you are wrong ');
   alert('Nop... you are wrong ');
@@ -48,7 +50,8 @@ question3 = question3.toLowerCase();
 if (question3 === 'yes') {
   // console.log('you are right i like swimming');
   alert('you are right i like swimming');
-  userScour++;
+  userScore++;
+  console.log(userScore);
 } else if (question3 === 'no') {
   // console.log('Nop... you are wrong');
   alert('Nop... you are wrong ');
@@ -61,15 +64,17 @@ if (question3 === 'yes') {
 
 
 
-var question4 = prompt('Do you think that I like noddle?');
-question4 = question4.toLowerCase();
+var question4 = prompt('Do you think that I like noddle?').toLowerCase();
+
 if (question4 === 'yes') {
   // console.log('Nop... you are wrong');
   alert('Nop... you are wrong');
-  userScour++;
+
 } else if (question4 === 'no') {
   // console.log('you are right i do not like noddle ');
   alert('you are right i do not like noddle ');
+  userScore++;
+  console.log(userScore);
 } else {
   // console.log('please answer by yes or no ');
   alert('please answer by yes or no ');
@@ -81,10 +86,12 @@ question5 = question5.toLowerCase();
 if (question5 === 'yes') {
   // console.log('Nop... you are wrong');
   alert('Nop... you are wrong');
-  userScour++;
+
 } else if (question5 === 'no') {
   // console.log('you are right i do not like playing football');
   alert('you are right i do not like playing football');
+  userScore++;
+  console.log(userScore);
 } else {
   // console.log('please answer by yes or no ');
   alert('please answer by yes or no ');
@@ -97,27 +104,34 @@ var attempts = 4;
 for (var i = 0; i < 4; i++) {
   attempts--;
   var question6 = prompt('can you guess my tall, it is a number within the range of 1.7-1.8');
-  while (question6 !== '1.77') {
-    // alert('Oops..! worng answer you have ' + attempts + ' more chances to guess the right answer.');
-    if (question6 === '1.78' || question6 === '1.76' || question6 === '1.75' || question6 === '1.79') {
-      alert('you answer is too close to the correct answer, you have ' + attempts + ' more chances to guess the right answer.');
-    }else if (question6 === '1.70' || question6 === '1.71' || question6 === '1.72' || question6 === '1.73' || question6 === '1.74'); {
-      alert('you answer is too low try again, you have ' + attempts + ' more chances to guess the right answer.');
-    } if (question6 === '1.8') {
-      alert('you answer is too high try again, you have ' + attempts + ' more chances to guess the right answer.');
-    } else if (question6>'1.8'||question6<'1.7'){
-      alert('you answer is out of the range you have ' + attempts + ' more chances to guess the right answer.');
-    }
-    break;
-  }
+  // while (question6 !== '1.77') {
+  // alert('Oops..! worng answer you have ' + attempts + ' more chances to guess the right answer.');
   if (question6 === '1.77') {
     alert('yes you are right i am 1.77m hight');
     // eslint-disable-next-line no-undef
-    userScour++;
+    userScore++;
+    console.log(userScore);
     break;
 
   }
+
+  else if (question6 === '1.78' || question6 === '1.76' || question6 === '1.75' || question6 === '1.79') {
+    alert('you answer is too close to the correct answer, you have ' + attempts + ' more chances to guess the right answer.');
+
+  } else if (question6 === '1.8') {
+    alert('you answer is too high try again, you have ' + attempts + ' more chances to guess the right answer.');
+
+  } else if (question6>'1.8'||question6<'1.7'){
+    alert('you answer is out of the range you have ' + attempts + ' more chances to guess the right answer.');
+
+  } else if (question6 === '1.70' || question6 === '1.71' || question6 === '1.72' || question6 === '1.73' || question6 === '1.74') {
+    alert('you answer is too low try again, you have ' + attempts + ' more chances to guess the right answer.');
+
+  }
+
 }
+
+
 
 
 
@@ -135,7 +149,7 @@ for (var x = 0; x < 6; x++) {
       alert('yes you are right '+seriesList[i]+' is one of my fav series and here is my full fav series list : '+ seriesList);
       flage=false;
 
-      userScour++;
+      userScore++;
       console.log(seriesList);
       break;
     }
@@ -150,4 +164,4 @@ for (var x = 0; x < 6; x++) {
 
 
 
-alert('your scour is ' + userScour + ' out of 7 ');
+alert('your scour is ' + userScore + ' out of 7 ');
