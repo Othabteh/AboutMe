@@ -108,4 +108,12 @@ body{
     
     text-decoration: none;
   }
+  body ol li{
+    width: 30%;
+    margin: auto;
+    line-height: 2;
+  }
   
+.skills{
+  margin-top: 50px;
+}
