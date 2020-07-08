@@ -7,7 +7,7 @@ alert('Now you will have five questions for you to answer. The questions are fac
 alert('Please answer the following question by typing yes or no');
 
 
-
+function ques1(){
 var question1 = prompt('Do you think that I like watching movies?');
 question1 = question1.toLowerCase();
 if (question1 === 'yes') {
@@ -22,10 +22,10 @@ if (question1 === 'yes') {
   // console.log('please answer by yes or no ');
   alert('please answer by yes or no ');
 }
+}
+ques1() ;
 
-
-
-
+function ques2(){
 var question2 = prompt('Do you think that I like drinking coffe?');
 question2 = question2.toLowerCase();
 if (question2 === 'yes') {
@@ -40,11 +40,11 @@ if (question2 === 'yes') {
   // console.log('please answer by yes or no ');
   alert('please answer by yes or no ');
 }
+}
+ques2 ();
 
 
-
-
-
+function ques3 (){
 var question3 = prompt('Do you think that I like swimming?');
 question3 = question3.toLowerCase();
 if (question3 === 'yes') {
@@ -59,13 +59,13 @@ if (question3 === 'yes') {
   // console.log('please answer by yes or no');
   alert('please answer by yes or no ');
 }
+}
+ques3();
 
 
 
-
-
+function ques4(){
 var question4 = prompt('Do you think that I like noddle?').toLowerCase();
-
 if (question4 === 'yes') {
   // console.log('Nop... you are wrong');
   alert('Nop... you are wrong');
@@ -79,8 +79,10 @@ if (question4 === 'yes') {
   // console.log('please answer by yes or no ');
   alert('please answer by yes or no ');
 }
+}
+ques4();
 
-
+function ques5(){
 var question5 = prompt('Do you think that I like playing football?');
 question5 = question5.toLowerCase();
 if (question5 === 'yes') {
@@ -96,10 +98,12 @@ if (question5 === 'yes') {
   // console.log('please answer by yes or no ');
   alert('please answer by yes or no ');
 }
-
+}
+ques5();
 
 alert('now you have 4 attempts to answer te 6th question');
 
+function ques6(){
 var attempts = 4;
 for (var i = 0; i < 4; i++) {
   attempts--;
@@ -130,13 +134,17 @@ for (var i = 0; i < 4; i++) {
   }
 
 }
-
+}
+ques6();
 
 
 
 
 
 alert('now you have 6 attempts to answer te 7th question');
+
+function ques7(){
+
 var Attempts = 6;
 for (var x = 0; x < 6; x++) {
   Attempts--;
@@ -144,7 +152,7 @@ for (var x = 0; x < 6; x++) {
   var seriesList=['got','suits','lucifer','narcos','elchapo'];
   // console.log(seriesList);
   var flage=true;
-  for(i=0;i<seriesList.length;i++){
+  for(var i=0;i<seriesList.length;i++){
     if(question7 === seriesList[i]) {
       alert('yes you are right '+seriesList[i]+' is one of my fav series and here is my full fav series list : '+ seriesList);
       flage=false;
@@ -161,7 +169,8 @@ for (var x = 0; x < 6; x++) {
   }else{break;}
 
 }
-
+}
+ques7();
 
 
 alert('your scour is ' + userScore + ' out of 7 ');
