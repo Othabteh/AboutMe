@@ -10,6 +10,12 @@ alert('Please answer the following question by typing yes or no');
 function ques1(){
   var question1 = prompt('Do you think that I like watching movies?');
   question1 = question1.toLowerCase();
+  while (question1 !=='yes'&& question1 !=='no') {
+    
+    alert('please answer by yes or no ');
+    question1= prompt('Do you think that I like watching movies?');
+    
+  }
   if (question1 === 'yes') {
 
     alert('you are right i like waching movies');
@@ -18,16 +24,21 @@ function ques1(){
   } else if (question1 === 'no') {
 
     alert('Nop... you are wrong ');
-  } else {
+  } 
 
-    alert('please answer by yes or no ');
-  }
+  
 }
 ques1() ;
 
 function ques2(){
   var question2 = prompt('Do you think that I like drinking coffe?');
   question2 = question2.toLowerCase();
+  while (question2 !=='yes'&& question2 !=='no') {
+    
+    alert('please answer by yes or no ');
+    question2= prompt('Do you think that I like drinking coffe?');
+    
+  }
   if (question2 === 'yes') {
 
     alert('you are right i like drinking coffe');
@@ -36,10 +47,7 @@ function ques2(){
   } else if (question2 === 'no') {
 
     alert('Nop... you are wrong ');
-  } else {
-
-    alert('please answer by yes or no ');
-  }
+  } 
 }
 ques2 ();
 
@@ -47,6 +55,12 @@ ques2 ();
 function ques3 (){
   var question3 = prompt('Do you think that I like swimming?');
   question3 = question3.toLowerCase();
+  while (question3 !=='yes'&& question3 !=='no') {
+    
+    alert('please answer by yes or no ');
+    question3= prompt('Do you think that I like swimming?');
+    
+  }
   if (question3 === 'yes') {
 
     alert('you are right i like swimming');
@@ -55,10 +69,7 @@ function ques3 (){
   } else if (question3 === 'no') {
 
     alert('Nop... you are wrong ');
-  } else {
-
-    alert('please answer by yes or no ');
-  }
+  } 
 }
 ques3();
 
@@ -66,6 +77,12 @@ ques3();
 
 function ques4(){
   var question4 = prompt('Do you think that I like noddle?').toLowerCase();
+  while (question4 !=='yes'&& question4 !=='no') {
+    
+    alert('please answer by yes or no ');
+    question4= prompt('Do you think that I like noddle?');
+    
+  }
   if (question4 === 'yes') {
 
     alert('Nop... you are wrong');
@@ -75,16 +92,19 @@ function ques4(){
     alert('you are right i do not like noddle ');
     userScore++;
     console.log(userScore);
-  } else {
-
-    alert('please answer by yes or no ');
-  }
+  } 
 }
 ques4();
 
 function ques5(){
   var question5 = prompt('Do you think that I like playing football?');
   question5 = question5.toLowerCase();
+  while (question5 !=='yes'&& question5 !=='no') {
+    
+    alert('please answer by yes or no ');
+    question5= prompt('Do you think that I like playing football?');
+    
+  }
   if (question5 === 'yes') {
 
     alert('Nop... you are wrong');
@@ -94,10 +114,7 @@ function ques5(){
     alert('you are right i do not like playing football');
     userScore++;
     console.log(userScore);
-  } else {
-
-    alert('please answer by yes or no ');
-  }
+  } 
 }
 ques5();
 
